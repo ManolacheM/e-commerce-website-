@@ -416,7 +416,7 @@ header {
 }
 .nav-container .categories-second-item:hover a {
   color: #fff;
-}
+} 
 
 .fa-bars {
   font-size: 28px;
