@@ -420,7 +420,7 @@ header {
 
 .fa-bars {
   font-size: 28px;
-}
+} 
 
 *, *:after, *:before { 
     -webkit-box-sizing: border-box; 
