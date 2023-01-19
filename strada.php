@@ -1,11 +1,11 @@
 
 <?php 
 session_start();
-require_once('configprod.php');     
+require_once('configprod.php');    
 require_once('helpers.php');  
 
 $sql = "SELECT * from products as p 
-    inner join subcategory as s on p.subcategory_id=s.subcategory_id where s.category_id='EOFF'";
+    inner join subcategory as s on p.subcategory_id=s.subcategory_id where s.category_id='ESTR'";
 $handle = $db->prepare($sql);
 $handle->execute();
 $getAllProducts = $handle->fetchAll(PDO::FETCH_ASSOC);
