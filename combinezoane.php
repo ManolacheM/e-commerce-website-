@@ -4,7 +4,7 @@ session_start();
 require_once('configprod.php');    
 require_once('helpers.php');  
 
-$sql = "SELECT * from products where subcategory_id='CRS'";
+$sql = "SELECT * from products where subcategory_id='COMB'";
 $handle = $db->prepare($sql);
 $handle->execute();
 $getAllProducts = $handle->fetchAll(PDO::FETCH_ASSOC);
@@ -129,7 +129,7 @@ $getAllProducts = $handle->fetchAll(PDO::FETCH_ASSOC);
                  <a href="single-product.php?product=<?php echo $product['product_id']?>">
                     <img class="card-img-top" src="<?php echo $product['image'] ?>" alt="<?php echo $product['name'] ?>">
                 </a>
-                <div class="card-body"> 
+                <div class="card-body">
                     <h5 class="card-title">
                         <a href="single-product.php?product=<?php echo $product['product_id'] ?>">
                             <?php echo $product['name']; ?>
